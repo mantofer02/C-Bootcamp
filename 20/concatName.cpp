@@ -6,8 +6,7 @@
 #include <iostream>
 
 static std::string concatName(std::string first, std::string second) {
-  std::string name(first + " " + second);
-  return name;
+  return first + ", " + second;
 }
 
 
