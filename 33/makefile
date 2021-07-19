@@ -4,7 +4,7 @@ LIBS = -lm
 EXECUTABLES = $(APPNAME)
 
 
-all: $(EXECUTABLES) gitignore
+all: $(EXECUTABLES) gitignore lint
 
 $(APPNAME): *.cpp
 	g++ $(CFLAGS) *.cpp -o $(APPNAME)

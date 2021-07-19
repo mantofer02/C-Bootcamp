@@ -17,14 +17,13 @@ static int coffeeCups(int n) {
   return n;
 }
 
-
 int main(int argc, char* argv[]) {
   int n = 0;
   if (argc > 1) {
     n = atoi(argv[1]);
   }
-  
+
   std::cout << coffeeCups(n) << std::endl;
-  
+
   return 0;
 }
