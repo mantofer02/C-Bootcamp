@@ -25,9 +25,7 @@ int main(void) {
 
 
   // ending(word_array, ending);
-
-
-
+  
   word_array = endings(word_array, ending);
 
   for (auto word : word_array) {
