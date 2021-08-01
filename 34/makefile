@@ -1,7 +1,10 @@
-APPNAME = profitable
+APPNAME = doubleLetters
 CFLAGS = -Wall -Wextra
 LIBS = -lm
 EXECUTABLES = $(APPNAME)
+
+
+all: $(EXECUTABLES) gitignore lint
 
 $(APPNAME): *.cpp
 	g++ $(CFLAGS) *.cpp -o $(APPNAME)
@@ -16,7 +19,7 @@ lint:
 
 .PHONY: gitignore
 gitignore:
-	echo $(EXECUTABLES) | tr " " "\n" >> .gitignore
+	echo $(EXECUTABLES) | tr " " "\n" > .gitignore
 
 .PHONY: clean
 clean:
