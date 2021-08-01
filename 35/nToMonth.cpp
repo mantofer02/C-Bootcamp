@@ -16,7 +16,6 @@ std::string nToMonths(int n) {
   "May", "June", "July", "August", "September", "October", "November",
   "December"};
 
-
   if (n >= 0 && n <= 11) {
     return months[n];
   }
